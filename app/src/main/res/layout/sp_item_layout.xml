@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/biz_plugin_weather_shenzhen_bg"
+    android:layout_width="150dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:src="@drawable/biz_plugin_weather_yin"
+        android:id="@+id/iv_weather"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_tem"
+        tools:text="31"
+        android:textSize="40sp"
+        android:textColor="@color/white"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_weather"
+        android:text="阴转多云"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_date"
+        android:text="(2017-07-25星期日)"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_tem_low_high"
+        android:text="25°C~33°C"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_win"
+        android:text="南风3~4级"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <TextView android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_air"
+        android:text="空气:53良"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
