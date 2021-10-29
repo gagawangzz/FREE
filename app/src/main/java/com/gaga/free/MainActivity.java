@@ -19,6 +19,8 @@ import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gaga.free.R;
+import com.gaga.free.TipsActivity;
 import com.gaga.free.adapter.FutureWeatherAdapter;
 import com.gaga.free.bean.DayWeatherBean;
 import com.gaga.free.bean.WeatherBean;
