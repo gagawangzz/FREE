@@ -14,4 +14,11 @@
     <color name="green_500">#8BC34A</color>
     <color name="green_700">#689F38</color>
     <color name="trans">#0000000</color>
+    <color name="green_1">#6b705c</color>
+    <color name="green_2">#a5a58d</color>
+    <color name="green_3">#b7b7a4</color>
+    <color name="brown_1">#ffe8d6</color>
+    <color name="brown_2">#ddbea9</color>
+    <color name="brown_3">#cb997e</color>
+
 </resources>
