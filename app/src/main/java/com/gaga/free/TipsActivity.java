@@ -1,11 +1,11 @@
 package com.gaga.free;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
 
 import com.gaga.free.adapter.TipsAdapter;
 import com.gaga.free.bean.DayWeatherBean;

@@ -13,7 +13,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="生活小提示"
+        android:text="***生活小提示***"
         android:textColor="@color/white"
         android:textSize="25sp" />
 

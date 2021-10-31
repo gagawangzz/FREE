@@ -44,27 +44,27 @@ public class WeightActivity extends AppCompatActivity {
         output = findViewById(R.id.out);
     }
     public void myclick(View v){
-            Log.i(TAG,"OnClick:AAAAAAAA");
-            Double h = Double.parseDouble(et1.getText().toString());
-            Double w = Double.parseDouble(et2.getText().toString());
-            if (h <= 0 || w <= 0) {
-                output.setText("ERROR!");
-                return;
-            }
-            h = h / 100;
-            double res = w / (h * h);
-            String str = "******中国标准******\nBMI: ";
-            String str1 = String.format(Locale.CHINA, "%.2f", res);
-            str = str + str1;
-            str += "\n您的身体：";
-            if(res < 18.5)
-                str += "偏瘦";
-            else if(res < 24)
-                str += "健康";
-            else if(res < 28)
-                str += "偏胖";
-            else
-                str += "肥胖";
-            output.setText(str);
+        Log.i(TAG,"OnClick:AAAAAAAA");
+        Double h = Double.parseDouble(et1.getText().toString());
+        Double w = Double.parseDouble(et2.getText().toString());
+        if (h <= 0 || w <= 0) {
+            output.setText("ERROR!");
+            return;
+        }
+        h = h / 100;
+        double res = w / (h * h);
+        String str = "******中国标准******\nBMI: ";
+        String str1 = String.format(Locale.CHINA, "%.2f", res);
+        str = str + str1;
+        str += "\n您的身体：";
+        if(res < 18.5)
+            str += "偏瘦，请注意营养！";
+        else if(res < 24)
+            str += "健康，请继续保持！";
+        else if(res < 28)
+            str += "偏胖，请注意锻炼！";
+        else
+            str += "肥胖，请加强锻炼！";
+        output.setText(str);
     }
 }

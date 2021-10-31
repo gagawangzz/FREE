@@ -1,6 +1,7 @@
-package com.gaga.free.util;
+package com.gaga.free.utils;
 
 import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

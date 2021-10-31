@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">FREE</string>
+    <string name="app_name">CARE</string>
 
+    <!-- Cities -->
     <string-array name="cities">
         <item>北京</item>
         <item>天津</item>
@@ -35,4 +36,19 @@
         <item>海口</item>
         <item>澳门</item>
     </string-array>
+
+    <!-- Calendar -->
+    <string name="sunday_text">Sun</string>
+    <string name="monday_text">Mon</string>
+    <string name="tuesday_text">Tue</string>
+    <string name="wednesday_text">Wed</string>
+    <string name="thursday_text">Thu</string>
+    <string name="friday_text">Fri</string>
+    <string name="saturday_text">Sat</string>
+    <string name="no_events">经期</string>
+
+    <string name="invalid_attribute">Failed to create Calendar,\n\n invalid value of Attributes!,\n Please review &amp; try again!</string>
+    <string name="invalid_count">Failed to create Calendar,\n\n invalid eventCount,\n Please enter between 1 to 3</string>
+    <string name="weather">weather</string>
+    <string name="health">health</string>
 </resources>

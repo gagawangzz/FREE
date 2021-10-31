@@ -1,86 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/biz_plugin_weather_shenzhen_bg"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <com.gaga.customcalendar2.calen.CustomCalendar
+        android:id="@+id/customCalendar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        app:endMonth="12"
+        app:endYear="2050"
+        app:startMonth="01"
+        app:startYear="2020"/>
 
-        <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/sp_city"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
-            android:backgroundTint="@color/white"
-            android:dropDownVerticalOffset="48dp"
-            android:entries="@array/cities"
-            android:overlapAnchor="false"
-            android:popupBackground="@color/trans"
-            android:spinnerMode="dropdown"
+    <LinearLayout
 
-            />
-    </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/iv_weather"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:src="@drawable/biz_plugin_weather_yin" />
-
-    <TextView
-        android:id="@+id/tv_tem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="31"
-        android:textColor="@color/white"
-        android:textSize="50sp" />
-
-    <TextView
-        android:id="@+id/tv_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="阴转多云(2017-07-25星期日)"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/tv_tem_low_high"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="25°C~33°C"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/tv_win"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="南风3~4级"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/tv_air"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="空气:53良\n空气好，适宜外出"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rlv_future_weather"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
 
-</LinearLayout>
+        <Button
+            android:text="@string/weather"
+            android:id="@+id/left"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:onClick="myclicka"/>
+
+        <Button
+            android:text="@string/health"
+            android:id="@+id/right"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="20dp"
+            android:onClick="myclickb"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
